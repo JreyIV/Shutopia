@@ -8,11 +8,12 @@ import {
   Subscribe,
   Footer,
 } from "./sections/index";
+import Nav from "./components/Nav";
 
 const App = () => {
   return (
     <main>
-      Nav
+      <Nav />
       <section className="xl:padding-1 wide:padding-r padding-b">
         <Hero />
       </section>
