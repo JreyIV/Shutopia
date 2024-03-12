@@ -4,6 +4,7 @@ const Clicker = ({
   backgroundColor,
   textColor,
   borderColor,
+  fullWidth,
 }) => {
   return (
     <button
@@ -12,7 +13,7 @@ const Clicker = ({
           backgroundColor
             ? `${backgroundColor} ${textColor} ${borderColor}`
             : "bg-[#651fff]  text-white border-[#651fff]"
-        } rounded-full w-full}`}
+        } rounded-full ${fullWidth && `w-full`}}`}
     >
       {label}
       {iconURL && (
